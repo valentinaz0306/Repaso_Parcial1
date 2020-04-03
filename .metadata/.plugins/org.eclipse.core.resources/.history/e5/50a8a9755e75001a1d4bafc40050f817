@@ -1,0 +1,106 @@
+package view;
+import processing.core.PApplet;
+import model.Perro;
+import model.CompareNombre;
+import model.CompareId;
+import model.CompareEdad;
+import model.CompareRaza;
+import model.CompareFecha;
+import java.util.LinkedList;
+import java.util.Collections;
+
+import controller.ControllerMain;
+
+public class Main extends PApplet {
+
+private ControllerMain controller;
+
+	
+//txt
+	String[]listaPalabras1, listP1;
+	String[]listaPalabras2,listP2;
+	//listaaa
+	private LinkedList <Perro> listaPerros;
+
+	public static void main(String[] args) {
+		PApplet.main("view.Main");
+	}
+
+	public void settings() {
+		size(800,800);
+		
+	}
+	
+	public void setup() {
+	controller= new ControllerMain();
+	//lista perros
+	
+	//cargar txt
+	
+	listaPalabras1= loadStrings("texto/datosUno.txt");
+	listaPalabras2= loadStrings("texto/datosDos.txt");
+	
+	//split palabras en la mismalinea 
+	listP1 = listaPalabras1[0].split(",");
+	listP2 = listaPalabras1[0].split(",");
+	//lista
+	listaPerros= new LinkedList<Perro>();
+	
+	//arreglo para recorrer las posiicones del txt
+	
+	for (int i=0;i<listaPalabras1.length;i++) {
+		
+		listP1 = listaPalabras1[i].split(",");
+		String id1= listP1[0];
+		
+		for (int j=0;j<listaPalabras1.length;j++) {
+			
+			listP2 = listaPalabras1[0].split(",");
+			String id2= listP2[0];	
+			
+		// compara id para ver si son iguales 	
+		if(id1.equals(id2)) {
+			listaPerros.add(new Perro(id1,listP1[2],listP2[1],listP1[1],listP2[2]));
+			break;
+		
+		}
+			
+			
+		}
+			}
+	
+	for ( int i = 0 ; i < listaPerros.size() ; i++ ) { println(listaPerros.get(i).getId());}
+		Collections.sort(listaPerros, new CompareId());
+		for ( int i = 0 ; i < listaPerros.size() ; i++ ) { println(listaPerros.get(i).getId());}
+	}
+	
+	public void draw() {
+		background(0);
+		
+	}
+	
+	public void keyPressed() {
+		
+		//controller.sortList();
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}// cierre main

@@ -1,0 +1,20 @@
+package model;
+
+import java.util.LinkedList;
+
+public class Logica {
+
+	private LinkedList id<Perro>;
+		
+	public Logica() {
+			
+			
+			
+	}
+	
+	public void sortList(char c) {
+		
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package model;
+
+import java.util.Comparator;
+
+public class CompareNombre implements Comparator<Perro> {
+   
+	@Override
+    public int compare(Perro perro1, Perro perro2) {
+    	return perro1.getNombre().compareTo(perro2.getNombre());
+    }
+
+}

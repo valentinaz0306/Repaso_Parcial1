@@ -1,0 +1,10 @@
+1 cancerbero 25-4-2002 pastor australiano 12
+2 mateo 12-5-2014 gran danes 5
+3 floppi 25-2-1999 doberman 20
+4 anibal 10-7-2013 lobero irlandes 6
+5 doggy 10-11-2017 labrador 2
+6 white 1-12-2010 pitbull 9
+7 gasper 10-10-2014 beagle 15
+8 pegaso 6-1-2014 bulldog frances 5
+9 zorro 20-6-2018 borzoi 1
+10 firulais 21-2-2011 galgo 8

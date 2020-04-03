@@ -1,0 +1,13 @@
+package model;
+import java.util.Comparator;
+
+public class CompareEdad implements Comparator<Perro> {
+   
+	@Override
+    public int compare(Perro perro1, Perro perro2) {
+    	return perro1.getEdad().compareTo(perro2.getEdad());
+    }
+
+
+
+}

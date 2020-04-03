@@ -1,0 +1,18 @@
+package model;
+
+public class Logica {
+
+	private LinkedList id<Perro>
+		
+	public Logica() {
+			
+			
+			
+	}
+	
+	public void sortList(char c) {
+		
+		
+	}
+
+}

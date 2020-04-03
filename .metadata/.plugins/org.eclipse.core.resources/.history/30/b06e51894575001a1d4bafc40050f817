@@ -1,0 +1,17 @@
+package controller;
+
+public class ControllerMain {
+	
+	
+	
+	
+	public  ControllerMain() {
+		
+	}// cierra controller
+	
+	public void sortList(char c) {
+		
+		
+	}
+
+}//fin

@@ -1,0 +1,14 @@
+package model;
+
+import java.util.Comparator;
+
+import model.Perro;
+
+public class CompareFecha implements Comparator<Perro> {
+   
+	@Override
+    public int compare(Perro perro1, Perro perro2) {
+    	return perro1.getFecha().compareTo(perro2.getFecha());
+    }
+
+}

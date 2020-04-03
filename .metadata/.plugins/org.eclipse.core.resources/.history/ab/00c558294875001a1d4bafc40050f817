@@ -1,0 +1,19 @@
+package model;
+import processing.core.PApplet;
+
+public class Perro {
+
+	private int posx,posy,tam;
+	private PApplet app;
+
+	public Perro(int posx, int posy, int tam, PApplet app) {
+		this.posx=posx;	
+		this.posy=posy;	
+		this.tam=tam;	
+		this.app=app;	
+	
+}
+	
+	
+	
+}
